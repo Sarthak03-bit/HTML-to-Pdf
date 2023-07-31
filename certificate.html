@@ -1,0 +1,151 @@
+<html>
+
+<head>
+  <style type="text/css">
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      color: black;
+      font-family: Verdana, Helvetica;
+      text-align: center;
+    }
+
+    .container {
+      border: 20px solid #524fff;
+      width: 1151px;
+      height: 802px;
+    }
+
+    .wrapper {
+      text-align: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logo {
+      width: 125px;
+      height: 125px;
+      padding-top: 5px;
+    }
+
+    .marquee {
+      color: black;
+      font-size: 54px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .notmaltext {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .course-title {
+      font-weight: bold;
+      margin-top: 2rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .footerItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .border {
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: gainsboro;
+    }
+
+    .person {
+      font-size: 36px;
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    .bottomimage {
+      width: 40px;
+      height: 40px;
+    }
+
+    .signature-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signatureimage {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-wrapper">
+      <img class="logo" src=https://storage.googleapis.com/calibr-assets/misc/Calibr-Logo.png />
+    </div>
+    <div class="wrapper">
+      <div class="wrapper-content">
+        <div class="marquee">Certificate of Completion</div>
+        <div class="notmaltext">This is to certify that</div>
+
+        <div class="person">{{name}}</div>
+        <div class="notmaltext">
+          has successfully completed the Online Course titled
+        </div>
+
+        <div class="course-title">{{course}}</div>
+      </div>
+    </div>
+    <hr class="border" />
+
+    <div class="footer">
+      <div class="footerItem">
+        <div>
+          <div>{{date}}</div>
+          <hr class="border" />
+          <div>Date</div>
+        </div>
+      </div>
+      <div class="footerItem">
+        <img class="bottomimage" src=https://storage.googleapis.com/calibr-assets/misc/certificate_badge.png alt="logo">
+      </div>
+      <div class="footerItem">
+        <div>
+          <div class="signature-wrapper">
+            <img class="signatureimage" src=https://storage.googleapis.com/calibr-assets/misc/calibr-signature.png
+              alt="logo">
+          </div>
+          <hr class="border" />
+          <div>Course Coordinator</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
