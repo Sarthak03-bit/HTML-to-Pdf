@@ -36,8 +36,7 @@
     }
 
     .footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
     }
 
     .logo {
@@ -64,12 +63,6 @@
       margin-top: 2rem;
       font-size: 2rem;
       text-align: center;
-    }
-
-    .footerItem {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .border {
@@ -100,6 +93,31 @@
       height: 40px;
       text-align: center;
     }
+
+    .item {
+      /* Optional styling for the items */
+      position: absolute;
+      top: 50%;
+      /* Center vertically */
+      transform: translateY(-50%);
+    }
+
+    #item1 {
+      left: 10%;
+      /* Set the left position of Item 1 */
+    }
+
+    #item2 {
+      left: 50%;
+      /* Set the left position of Item 2 */
+      transform: translateX(-50%) translateY(-50%);
+      /* Center horizontally */
+    }
+
+    #item3 {
+      right: 10%;
+      /* Set the right position of Item 3 */
+    }
   </style>
 </head>
 
@@ -124,17 +142,17 @@
     <hr class="border" />
 
     <div class="footer">
-      <div class="footerItem">
+      <div class="item" id="item1">
         <div>
           <div>{{date}}</div>
           <hr class="border" />
           <div>Date</div>
         </div>
       </div>
-      <div class="footerItem">
+      <div class="item" id="item2">
         <img class="bottomimage" src=https://storage.googleapis.com/calibr-assets/misc/certificate_badge.png alt="logo">
       </div>
-      <div class="footerItem">
+      <div class="item" id="item3">
         <div>
           <div class="signature-wrapper">
             <img class="signatureimage" src=https://storage.googleapis.com/calibr-assets/misc/calibr-signature.png
